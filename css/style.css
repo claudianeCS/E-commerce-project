@@ -83,7 +83,8 @@
     width: 100%;
 }
 
-.banner h1{
-        
-    
+.titulo{
+    position: absolute;
+    top: 350px;
+    right: 300px;
 }
