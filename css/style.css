@@ -35,14 +35,12 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
 .box-3{
     display: flex;
     align-items: center;
     margin-right: 175px ;
 
 }
-
 .box-2{
     display: flex;
     margin-right: 35px;
@@ -50,11 +48,9 @@
     align-items: center;
    
 }
-
 .box-4{
     display: flex;
 }
-
 .img-1{
     margin-top: 5px;
     width: 26px;
@@ -69,11 +65,10 @@
     width: 34px;
     height: 34px;
 }
-
-
 .logo{
     height: 85px;
     margin-right: 185px;
+    margin-top: -20px;
 }
 .borda{
     border-width: 1px;
@@ -123,4 +118,34 @@
     border-bottom: double;
     background-color: transparent;
 
+}
+
+.desconto {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.retangulo {
+    height: 650px;
+    margin-top: 80px;
+    background-color: #e8e8e8;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    margin-top: -30%;
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+}
+
+.categorias-card {
+    display: grid;
+    margin-top: 3%;
+    column-gap: -50px;
+    row-gap: 20px;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
 }
