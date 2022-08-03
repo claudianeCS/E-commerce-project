@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital@1&family=Inter&family=Montserrat:wght@200&family=Orbitron:wght@500&family=Raleway:wght@300&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -118,7 +119,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 15%;
-    margin-bottom: 40px;
+    margin-bottom: 150px;
 }
 
 .card-container {
@@ -130,4 +131,44 @@
 
 .casaco {
     margin-top: -60%;
+    font-family: 'Roboto Condensed';
+}
+
+.casaco h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: -13%;
+    margin-right: 5px;
+}
+
+.casaco h4 {
+    display: flex;
+    margin-left: 65%;
+    margin-top: -6%;
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+}
+
+.casaco p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+.tamanho-casaco {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 13%;
+}
+
+.btn-comprar {
+    display: flex;
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 15%;
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
