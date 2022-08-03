@@ -114,3 +114,20 @@
     justify-items: center;
     grid-template-columns: auto auto auto;
 }
+.card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    width: 400px;
+    height: 468px;
+    background-color: #FFD089;
+    border-radius: 20px;
+}
+
+.casaco {
+    margin-top: -60%;
+}
