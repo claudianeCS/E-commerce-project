@@ -8,17 +8,19 @@
 }
 
 .menu{
+    position: fixed;
     background-color:#F5F5F5;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     height: 95px;
+    width: 100%;
 }
 .menu li{
     float: left;
     list-style: none;
     text-decoration: none;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 .menu a{
     font-family: 'Roboto Condensed';
@@ -35,32 +37,36 @@
     display: flex;
     align-items: center;
     margin-right: 175px ;
+    
 
+}
+.box-3 ul{
+    margin-left: 80px;
 }
 .box-2{
     display: flex;
     margin-right: 35px;
-    padding-left: 20px;
+    padding-left: 45px;
     align-items: center;
    
 }
 .box-4{
     display:inline-flex;
-
+    margin-left: 85px;
 }
 .img-1{
     margin-top: 5px;
-    width: 26px;
-    height: 26px;
+    width: 23px;
+    height: 23px;
 }
 .img-2{
     margin-top: 3px;
-    width: 31px;
-    height: 31px;
+    width: 27px;
+    height: 27px;
 }
 .img-3{
-    width: 34px;
-    height: 34px;
+    width: 33px;
+    height: 33px;
 }
 .logo{
     height: 85px;
@@ -76,25 +82,32 @@
 
 }
 .banner{
-    width: 100%;
+    width: 1865px;
+    height: 880px;
+    padding-top: 95px;
+    background-image: url("/Imagens/Imagembannner22.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: right;
+    background-position: bottom;
+}
+.banner img{
+    margin-top: 65px;
+    height: 600px;
 }
 
-.titulo{
-    position: absolute;
-    top: 350px;
-    right: 300px;
-    bottom: 20px;
-}
 
 .desconto {
     margin-top: 60px;
+    padding-top: 30px;
     margin-bottom: 60px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: space-around;
 }
 
 .retangulo {
-    height: 650px;
+    height: 700px;
     margin-top: 80px;
     background-color: #e8e8e8;
 }
@@ -102,7 +115,7 @@
 .categorias {
     display: flex;
     justify-content: center;
-    margin-top: -30%;
+    margin-top: -33%;
     font-family: 'Roboto Condensed';
     font-size: 25px;
     
@@ -118,7 +131,7 @@
 .card {
     display: flex;
     justify-content: space-around;
-    margin-top: 15%;
+    margin-top: 20%;
     margin-bottom: 150px;
 }
 
@@ -171,4 +184,14 @@
     margin-top: 15%;
     border: 2px solid #000000;
     border-radius: 5px;
+}
+
+/*BUTTON*/
+.desconto-btn{
+    background-color: transparent;
+    border: none;
+    transition: transform 1s;
+}
+.desconto-btn:hover, .desconto-btn:focus{
+    transform: translateX(10px) scale(1.2);
 }
