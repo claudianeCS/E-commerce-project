@@ -37,8 +37,6 @@
     display: flex;
     align-items: center;
     margin-right: 175px ;
-    
-
 }
 .box-3 ul{
     margin-left: 80px;
@@ -48,7 +46,6 @@
     margin-right: 35px;
     padding-left: 45px;
     align-items: center;
-   
 }
 .box-4{
     display:inline-flex;
@@ -95,8 +92,6 @@
     margin-top: 65px;
     height: 600px;
 }
-
-
 .desconto {
     margin-top: 60px;
     padding-top: 30px;
@@ -134,7 +129,6 @@
     margin-top: 20%;
     margin-bottom: 150px;
 }
-
 .card-container {
     width: 400px;
     height: 468px;
@@ -177,15 +171,6 @@
     margin-top: 13%;
 }
 
-.btn-comprar {
-    display: flex;
-    width: 95%;
-    margin-left: 10px;
-    margin-top: 15%;
-    border: 2px solid #000000;
-    border-radius: 5px;
-}
-
 /*BUTTON*/
 .desconto-btn{
     background-color: transparent;
@@ -194,4 +179,38 @@
 }
 .desconto-btn:hover, .desconto-btn:focus{
     transform: translateX(10px) scale(1.2);
+}
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%; 
+}    
+
+
+.btn-comprar {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px ;
+    cursor: pointer;
+    animation-name: anima;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+}
+
+.btn-comprar a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family:  'Roboto Condensed';
+    color: #000;
+}
+
+@keyframes anima {
+    0%   {background-color: #FFD089;}
+    25%  {background-color: #fac068;}
+    50%  {background-color: #fcb54a;}
+    100% {background-color: #faa82c;}
 }
