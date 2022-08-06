@@ -196,9 +196,9 @@
     transform: translateY(5px) scale(1.0);
 }
 .fundo {
-    height: 700px;
+    height: 550px;
     margin-top: 10%;
-    margin-bottom: 7%;
+    margin-bottom: 4%;
     background-color: #e8e8e8;
 }
 .colunas {
@@ -206,16 +206,57 @@
     justify-content: space-around;
     padding: 0% 10% 0% 10%;
 }
-.coluna1, .coluna2, .coluna3, .coluna4 {
+.coluna1, .coluna2, .coluna3, .coluna4, .coluna5 {
     margin-top: 60px;
 }
-.coluna1 p, .coluna2 p, .coluna3 p, .coluna4 p {
+.coluna1 p, .coluna2 p, .coluna3 p, .coluna4 p, .coluna5 p {
     margin-top: 20px;
+    font-size: 14px;
+}
+.coluna1 a, .coluna2 a, .coluna3 a, .coluna4 a, .coluna5 a{
+    text-decoration: none;
     color: #8B8B8B;
 }
-.coluna1 h3, .coluna2 h3, .coluna3 h3, .coluna4 h3 {
+.coluna1 h3, .coluna2 h3, .coluna3 h3, .coluna4 h3, .coluna5 h3 {
     margin-top: 10px;
     margin-bottom: 30px;
     font-family: 'Roboto Condensed';
-    font-size: 25px;
+    font-size: 20px;
+}
+.traco {
+    display: flex;
+    border: 1px solid #d1d1d1;
+    margin-top: 60px
+}
+.img-final {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+}
+.pais {
+    display: flex;
+    justify-content: center;    
+}
+.pais a{
+    margin: -80px 0.5% 0px 0.5%;
+    color: #adadad;
+    text-decoration: none;
+    font-size: 12px;
+}
+.pais2{
+    display: flex;
+    justify-content: center;
+}
+.pais2 a{
+    margin: -50px 0.5% 0px 0.5%;
+    color: #adadad;
+    text-decoration: none;
+    font-size: 12px;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+}
+.copy p {
+    margin: 55px 1% 0px 1%;
 }
