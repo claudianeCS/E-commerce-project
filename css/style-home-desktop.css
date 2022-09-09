@@ -1,55 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital@1&family=Inter&family=Montserrat:wght@200&family=Orbitron:wght@500&family=Raleway:wght@300&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-* {
+
+body{
+    position: relative;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
+
+.logo{
+    height: 85px;
+   
+}
+
 .menu{
     position: fixed;
+    font-family: 'Roboto Condensed';
     background-color:#F5F5F5;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    height: 95px;
+    height: 85px;
     width: 100%;
 }
-.menu li{
-    float: left;
-    list-style: none;
-    text-decoration: none;
-    padding-left: 15px;
-}
-.menu a{
-    font-family: 'Roboto Condensed';
-    font-size: 16px;
+.menu a {
     text-decoration: none;
     color: #000;
+    font-size: 18px;
 }
-.box-1{
+.box-3 {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
 }
-.box-3{
-    display: flex;
-    align-items: center;
-    margin-right: 175px ;
-}
+
 .box-3 ul{
-    margin-left: 80px;
-}
-.box-2{
+    padding: 0;
     display: flex;
-    margin-right: 35px;
-    padding-left: 45px;
+    list-style: none;
     align-items: center;
 }
-.box-4{
-    display:inline-flex;
-    margin-left: 85px;
+.box-3 li{
+    padding-right: 20px;
 }
+
+.box-3 li:hover{
+    text-decoration: underline;
+}
+
+/*----------------------------------*/
+
+.box-4 {
+    display: flex;
+    align-items: center;
+}
+.box-2 ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/*--------------------------------------*/
+.img-2, .img-3{
+    padding-right: 15px;
+}
+
 .img-1{
     margin-top: 5px;
     width: 23px;
@@ -64,33 +77,29 @@
     width: 33px;
     height: 33px;
 }
-.logo{
-    height: 85px;
-    margin-right: 185px;
-    margin-top: -20px;
-}
-.borda{
-    border-width: 1px;
-    border-style: groove;
-    margin-left: 85px;
-    margin-top: 17px;
-    margin-bottom: 17px;
 
-}
+/*-------------BANNER ----------------- */
+
 .banner{
-    width: 100%;
-    height: 880px;
-    padding-top: 95px;
     background-image: url("/Imagens/Imagembannner22.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% ;
+    height: 60vh;
     text-align: right;
-    background-position: bottom;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
-.banner img{
-    margin-top: 65px;
-    height: 600px;
+
+.banner img {
+    width: 40%;
+    padding-right: 20px;
 }
+
+header {
+   padding-top: 85px;
+}
+/*-------------BUTTON ----------------*/
 .desconto {
     margin-top: 60px;
     padding-top: 30px;
@@ -99,18 +108,42 @@
     display: flex;
     justify-content: space-around;
 }
-.retangulo {
-    height: 700px;
-    margin-top: 80px;
+
+.desconto-btn{
+    background-color: transparent;
+    border: none;
+    transition: transform 1.5s;
+}
+.desconto-btn img{
+    width: 90%;
+}
+.desconto-btn:hover, .desconto-btn:focus{
+    transform: translateX(10px) scale(1.2);
+}
+
+/*-------------CATEGORY ----------*/
+
+
+.category{
+    margin-top: 10%;
     background-color: #e8e8e8;
+    height: 80vh;
+
 }
 .categorias {
     display: flex;
     justify-content: center;
-    margin-top: -33%;
-    font-family: 'Roboto Condensed';
+    padding-top: 7%;
     font-size: 25px;
 }
+.categorias img{
+    width: 40%;
+}
+
+.categorias-card img{
+    width: 90%;
+}
+
 .categorias-card {
     display: grid;
     margin-top: 3%;
@@ -119,6 +152,11 @@
     justify-items: center;
     grid-template-columns: auto auto auto;
 }
+
+
+
+
+
 .card {
     display: flex;
     justify-content: space-around;
@@ -126,32 +164,40 @@
     margin-bottom: 150px;
 }
 .card-container {
-    width: 400px;
-    height: 468px;
+    width: 21.1%;
+    height: 50vh;
     background-color: #FFD089;
     border-radius: 20px;
 }
 .casaco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: -60%;
     font-family: 'Roboto Condensed';
+}
+.casaco img{
+    width: 100%;
 }
 .casaco h3 {
     display: flex;
     justify-content: center;
     margin-top: -13%;
+    padding-bottom: 5%;
     margin-right: 5px;
 }
 .casaco h4 {
     display: flex;
-    margin-left: 65%;
-    margin-top: -6%;
+    margin: 0;
+    padding-top: 5%;
     font-family: 'Roboto Condensed';
-    font-size: 25px;
+    font-size: 180%;
 }
 .casaco p {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 0;
+    margin-bottom: 2%;
     margin-right: 5px;
     font-family: 'Inter', sans-serif;
     font-size: 13px;
@@ -162,20 +208,15 @@
     margin-top: 13%;
 }
 
-/*BUTTON*/
-.desconto-btn{
-    background-color: transparent;
-    border: none;
-    transition: transform 1s;
-}
-.desconto-btn:hover, .desconto-btn:focus{
-    transform: translateX(10px) scale(1.2);
-}
+
+
 .comprar {
     display: flex;
     justify-content: center;
-    margin-top: 15%; 
+    margin-top: 20%; 
 }    
+
+
 .btn-comprar {
     width: 100%;
     background-color: transparent;
@@ -195,12 +236,17 @@
     transform: translateX(5px) scale(1.0);
     transform: translateY(5px) scale(1.0);
 }
+
+
+
 .fundo {
-    height: 550px;
-    margin-top: 10%;
-    margin-bottom: 4%;
+    height: 70vh;
+    margin-top: 20%;
+   
     background-color: #e8e8e8;
 }
+
+
 .colunas {
     display: flex;
     justify-content: space-around;
@@ -232,6 +278,7 @@
     display: flex;
     justify-content: center;
     margin-top: -70px;
+    height: 27vh;
 }
 .pais {
     display: flex;
@@ -253,10 +300,28 @@
     text-decoration: none;
     font-size: 12px;
 }
-.copy {
+.copy { 
+    position: relative;
     display: flex;
     justify-content: center;
+    bottom: -7%;
+    width: 100%;
 }
 .copy p {
-    margin: 55px 1% 0px 1%;
+    color: #616060;
+    font-family: 'Roboto Condensed';
+    font-size: 0.8em;
+    
+    margin: 0;
+    margin-left: 2%;
 }
+
+.seta{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/*_______________________*/
+
